@@ -286,7 +286,9 @@ const handlePlantsClick = (e) => {
                         <div className="product-card" key={plantIndex}>
                             <img src={plant.image} alt={plant.name} className="product-image" />
                             <div className="product-title">{plant.name}</div>
-                            <button className="product-button" onClick={() => handleAddToCart(plant)}></button>
+                            <div className="product-description">{plant.description}</div>
+                            <div className="product-cost">{plant.cost}</div>
+                            <button className="product-button" onClick={() => handleAddToCart(product)}>Add to Cart</button>
                         </div>
                     ))}
                 </div>
@@ -295,7 +297,7 @@ const handlePlantsClick = (e) => {
 
         </div>
  ) :  (
-    <CartItem onContinueShopping={handleContinueShopping}/>
+<CartItem onContinueShopping={handleContinueShopping} />
 )}
     </div>
     );
