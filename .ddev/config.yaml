@@ -15,7 +15,7 @@ web_environment: []
 corepack_enable: false
 web_extra_exposed_ports:
      - name: myWork
-       container_port: 4173
+       container_port: 5173
        http_port: 8080
        https_port: 8443
 
